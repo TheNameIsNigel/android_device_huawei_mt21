@@ -57,11 +57,11 @@ PRODUCT_PACKAGES += \
     keystore.msm8226
 
 # FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    FMRecord \
-    libqcomfm_jni \
-    qcom.fmradio
+# PRODUCT_PACKAGES += \
+#    FM2 \
+#    FMRecord \
+#    libqcomfm_jni \
+#    qcom.fmradio
 
 # Graphics
 PRODUCT_PACKAGES += \

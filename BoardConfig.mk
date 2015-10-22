@@ -68,8 +68,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 # FM
-AUDIO_FEATURE_ENABLED_FM := true
-TARGET_QCOM_NO_FM_FIRMWARE := true
+# AUDIO_FEATURE_ENABLED_FM := true
+# TARGET_QCOM_NO_FM_FIRMWARE := true
 
 # Fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -117,13 +117,13 @@ COMMON_GLOBAL_CPPFLAGS += -DUSE_RIL_VERSION_10
 TARGET_RIL_VARIANT := caf
 
 # SELinux
--include device/qcom/sepolicy/sepolicy.mk
-BOARD_SEPOLICY_DIRS += device/huawei/mt2/sepolicy
+# -include device/qcom/sepolicy/sepolicy.mk
+# BOARD_SEPOLICY_DIRS += device/huawei/mt2/sepolicy
 
 # TWRP
 #   Uncomment the lines below only when building TWRP.
 #   Do not leave SELinux permissive when building CM or Cyanogen Recovery.
-# BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 # RECOVERY_VARIANT := twrp
